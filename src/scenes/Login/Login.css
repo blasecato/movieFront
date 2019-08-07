@@ -1,0 +1,25 @@
+.boton {
+    background-color:blue;
+}
+.text {
+    color:blue;
+    
+}
+*{
+    color:darkslategray;
+}
+.input{
+    width:300px;
+    height: 30px;
+}
+
+.card {
+    width: 450px;
+    opacity: 100;
+    background-color: cornflowerblue;
+    color: blue;
+    border-top-color: red;
+  border-right-color: red;
+  border-bottom-color: red;
+  border-left-color: red;
+}

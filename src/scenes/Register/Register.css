@@ -1,0 +1,31 @@
+.input{
+    width: 300px;
+    height: 60px;
+}
+.input_num {
+    width: 200px;
+    height: 60px;
+}
+.ant-card-body{
+  background-color: transparent;
+}
+.card{
+  background-color: transparent;
+}
+.container{
+  background-image: url('https://i.ytimg.com/vi/sh2ZTWrGK08/maxresdefault.jpg');
+}
+.ant-advanced-search-form {
+    padding: 24px;
+    background: #fbfbfb;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+  }
+  
+  .ant-advanced-search-form .ant-form-item {
+    display: flex;
+  }
+  
+  .ant-advanced-search-form .ant-form-item-control-wrapper {
+    flex: 1;
+  }
