@@ -3,6 +3,9 @@ import logo from '../../logo.svg';
 import '../../App.css';
 import './Home.css';
 import MovieCard from '../../components/MovieCard/MovieCard';
+import {connect} from 'react-redux'
+import movieActions from '../../services/Movie/MovieActions'
+
 
 class Home extends React.Component{
 
@@ -14,6 +17,10 @@ class Home extends React.Component{
       { id: 3, name: "Toy Story 3" }
     ]
   }
+
+componentDidMount(){
+  console.log(this.props.getAll());
+}
 
   setMovieName(event){
     console.log("hola")
@@ -39,6 +46,8 @@ class Home extends React.Component{
   
 
   render(){
+    console.log(this.props.movie);
+    const {movieName, movieList}=this.state;
     return (
       <div className="App">
         <header className="App-header">
@@ -66,4 +75,17 @@ class Home extends React.Component{
   }
 }
 
+const mapSatateToProps =(state)=>{
+  return{
+    movie: state.movie
+  }
+}
+const mapDispatchToProps ={
+  getAll: movieActions.getAll
+};
+
+Home = connect(
+  mapSatateToProps,
+  mapDispatchToProps,
+)(Home);
 export default Home;

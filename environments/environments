@@ -1,0 +1,4 @@
+API_URL=http://localhost:4200/v1
+SERVER_ASSETS=http://localhost:4200
+SITE_URL=https://localhost:3000
+PORT=3000
